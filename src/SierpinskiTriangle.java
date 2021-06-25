@@ -13,9 +13,18 @@ public class SierpinskiTriangle extends JPanel {
 	int displayHeight = 2880;
 	int displayWidth = 1800;
 
-	// array of colours to fill recursive triangle
-	private static Color[] colours = { Color.BLACK, Color.CYAN, Color.BLUE, Color.DARK_GRAY, Color.LIGHT_GRAY,
-			Color.WHITE, Color.BLUE, Color.WHITE, Color.BLUE, Color.WHITE };
+	// Color Array for go over when filling the triangles.
+		private static Color[] colours = { 
+				new Color(0xfff100), // yellow 
+				new Color(0xff8C00), // orange
+				new Color(0xe81123), // red
+				new Color(0xec008c), // pink
+				new Color(0x68217a), // purple
+				new Color(0x00188f), // navy
+				new Color(0x00bcf2), // blue
+				new Color(0x00b294), // turquoise
+				new Color(0x029658), // green
+				new Color(0xbad80a)};// chartreuse};
 
 	private static int maxDepth = 9;
 
